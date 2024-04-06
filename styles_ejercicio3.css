@@ -1,23 +1,39 @@
 #cont{
+    min-height: 10px;
     margin: 15px auto;
     width: 100%;
-    background-color: blue;
+}
+a{
+    text-decoration: none;
 }
 #div1{
+    position: fixed;
+    padding: 10px;
     margin: 15px auto;
     width: 50%;
     background-color: #d0fdd7;
     color: #614051 ;
     text-align: center;
-    border: 5px solid #d0fdd7;
     border-radius: 20px ;
+    text-decoration: none;
 }
 
-#div1 :hover{
-    
+#cont :hover{
+    text-decoration: none;
+    width: 50%;
     transition: all 0.2s;
-    border: 10px solid #f8de7e;
     border-radius: 15px 50px;
     background-color: #f8de7e;
     color: #40cfff;
+}
+#cont :hover(:active){
+    text-decoration: none;
+    width: 50%;
+    height: 100%;
+    transition: all 0.2s;
+    border-radius: 15px 50px;
+    background-color: #77dd77;
+    color: #a2a0a1;
+    box-shadow: rgb(25, 111, 61) 5px,5px;
+    text-shadow: rgb(25, 111, 61) 3px 3px 5px;
 }
