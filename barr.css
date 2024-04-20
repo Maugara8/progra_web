@@ -1,0 +1,38 @@
+.estilos_barr{
+    display: inline-block;
+    background-color: #ac01bf;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.estilos_barr:hover{
+    background-color: #4f47ac;
+    color: #0a0a0a;
+}
+
+nav{
+    background-color: #b28405 ;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav_boton{
+    background-color: #b28405;
+    color: #4f47ac;
+    padding: 10px 0px;
+    border: 2px solid#fff;
+    display: none;
+}
+@media(max-width: 600px){
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+    .estilos_barr{
+        margin: 10px 0px;
+    }
+    .nav_boton{
+        display: inline-block;
+    }
+}
