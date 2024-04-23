@@ -15,11 +15,23 @@ p{
     font-family: seriously;
     font-size: 18px;
     color: black;
+    margin: 10px 20px 15px 20px;/*sup,der,inf,izq*/
 }
 
 *{
     margin: 10px 20px 15px 20px;/*sup,der,inf,izq*/
 }
+main{
+    position: relative;
+}
+iframe{
+    margin: 0;
+}
+video{
+    width: 29%;
+    height: 200px;
+}
+
 .Impacto{
     margin: 0;
     width: 95%;
