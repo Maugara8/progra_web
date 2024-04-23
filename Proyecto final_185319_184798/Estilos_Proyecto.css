@@ -27,6 +27,10 @@ main{
 iframe{
     margin: 0;
 }
+video{
+    width: 29%;
+    height: 200px;
+}
 
 .Impacto{
     margin: 0;
