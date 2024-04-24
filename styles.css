@@ -1,0 +1,19 @@
+
+*{
+    margin: 5px;
+}
+input{
+    height: 30px;
+    width: 50%;
+}
+#boton{
+    height: 40px;
+    background-color: #87CEFA;
+    color: black;
+    border: 0;
+}
+ 
+#boton:hover{
+    background-color: #5086c1;
+    color: white;
+}
