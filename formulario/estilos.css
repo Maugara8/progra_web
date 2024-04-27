@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+ul{
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+}
+p{
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+}
+h1{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+h2{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+#button{
+    width: 50%;
+    height: 60px;
+    background-color: aqua;
+    color: black;
+    border: 0;
+}
+#button:hover{
+    width: 50%;
+    height: 60px;
+    background-color: rgb(6, 6, 109);
+    color: white;
+    border: 0;
+}
