@@ -5,7 +5,7 @@ if(isset($_POST['submit']))
 	$correo = $_POST['email'];
 	$mensaje = $_POST['mensaje'];
 
-	$para = "184798@upslp.edu.mx"; 
+	$para = "maugara8@gmail.com"; 
 	$asunto = "Enviando informacion";
 
 	$contenido = "nombre: $nombre /n "
