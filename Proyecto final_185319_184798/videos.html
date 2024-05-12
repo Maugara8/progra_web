@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos_video.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+		<h1>Galeria de vídeos</h1>
+		<div class="row">
+			<div class="col">
+				<div class="future-img">
+					<img src="imagenes_proyecto/min1.jpg" alt="reproducir video" width="100%">
+					<img src="imagenes_proyecto/play-button-icon-png-12.png" class="play" onclick="playVid('videos_proyecto/video_principla.mp4')">
+				</div>
+			</div>
+			<div class="col">
+				<div class="small-img-row">
+					<div class="small-img">
+						<img src="imagenes_proyecto/min.2.jpg" alt="reproducir video">
+						<img src="imagenes_proyecto/play-button-icon-png-12.png" class="play" onclick="playVid('videos_proyecto/video1.mp4')">
+					</div>
+					<p>que es la computación cuantica???<br>descripción aqui</p>
+				</div>
+				<div class="small-img-row">
+					<div class="small-img">
+						<img src="imagenes_proyecto/min3.jpg" alt="reproducir video">
+						<img src="imagenes_proyecto/play-button-icon-png-12.png" class="play" onclick="playVid('videos_proyecto/video2.mp4')">
+					</div>
+					<p>que es la computación cuantica???<br>descripción aqui</p>
+				</div>
+				<div class="small-img-row">
+					<div class="small-img">
+						<img src="imagenes_proyecto/min4.jpg" alt="reproducir video">
+						<img src="imagenes_proyecto/play-button-icon-png-12.png" class="play" onclick="playVid('videos_proyecto/video3.mp4')">
+					</div>
+					<p>que es la computación cuantica???<br>descripción aqui</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="reproductor" id="reproducir">
+		<video width="100%" controls id="video">
+			<source src="videos_proyecto/video principla.mp4" type="video/mp4">
+		</video>
+		<img src="imagenes_proyecto/R.png" class="pause" onclick="stop()">
+	</div>
+	<script>
+		var reproducir = document.getElementById("video");
+		var video = document.getElementById("video");
+
+
+		function playVid(FILE){
+			video.scr = FILE;
+			reproducir.style.display = "block";
+		}
+		function stop(){
+			reproducir.style.display = "none";
+
+		}
+	</script>
+</body>
+</html>
