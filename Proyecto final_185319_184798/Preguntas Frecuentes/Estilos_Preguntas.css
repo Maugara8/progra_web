@@ -1,67 +1,91 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hammersmith+One&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-body {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    background-color: #C7F1DF;
-    font-size: 18px;
+body{
+  font-family: Arial, sans-serif;
+  background-color: #F8F4EC;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
-#contiene {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header {
+  background-color: #E3CEFF;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
 
-h1, h2 {
-    font-family: "Bungee", sans-serif;
-    color: #333;
-    text-align: center;
+h1 , h2{
+  text-align: center;
+  margin: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #E3CEFF;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
-li {
-    margin-bottom: 10px;
-    font-family: "Hammersmith One", sans-serif;
+.pregunta {
+  margin-bottom: 20px;
+  color: white;
 }
 
-input[type="radio"] {
-    margin-right: 10px;
+.pregunta h3 {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
 }
 
-input[type="button"] {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+.pregunta p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+}
+ /*Estilos para resaltar la pregunta al pasar el mouse*/
+.pregunta:hover {
+  background-color: #F8F4EC;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-input[type="button"]:hover {
-    background-color: #45a049;
+
+
+/*h1 {
+  margin: 0;
 }
 
-iframe {
-    margin-top: 20px;
-    display: block;
-    border: none;
-    width: 100%;
-    height: 500px;
+
+
+h2 {
+  color: #333;
 }
 
+.pregunta {
+  margin-bottom: 20px;
+}
+
+.pregunta h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pregunta p {
+  font-size: 16px;
+  color: #666;
+}
+
+.faq {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.faq .pregunta:last-child {
+  margin-bottom: 0;
+}*/
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css); 
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 
@@ -87,8 +111,8 @@ overflow:visible;
 .main-menu {
 padding: 0;
 margin: 0;
-background:#45a049;
-border-right:1px solid #9ab4ff;
+background:#9e7dc9;
+border-right:1px solid #f8f4f9;
 position:fixed;
 top:0;
 bottom:0;
@@ -117,7 +141,7 @@ position:relative;
 display:table;
 border-collapse:collapse;
 border-spacing:0;
-color: #000;;
+color:#000000;
  font-family: arial;
 font-size: 14px;
 text-decoration:none;
@@ -179,7 +203,7 @@ padding:0;
 }
 .main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
 color:#fff;
-background-color:#1e5221;
+background-color:#8e41f2;
 }
 .area {
 float: left;
