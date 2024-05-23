@@ -33,21 +33,53 @@
         <input type="text" id="resultado" name="resultado" ><br/>
     </form><br/>
     <input type="button" id="boton" value="Generar el RFC" onclick="genera_rfc()" >
-    <script>
-        function genera_rfc( name,fhn,mhn,year,day,mont){
-            let nombre=document.getElementById("nombre").value;
-            let name=nombre.substring(0,2);
-            let ap=document.getElementById("ap").value;
-            let fhn=ap.substring(0,1);
-            let am=document.getElementById("am").value;
-            let mhn=am.substring(0,1);
-            var anio=document.getElementById("anio").value;
-            var year=anio.substring(2,2);
-            var day=document.getElementById("dia").value;
-            var mont=document.getElementById("mes2").value;
-            r=name+fhn+mhn+year+day+mont;
-            document.getElementById("resultado").value="hola";
-        }
-    </script>
+<script>
+  function genera_rfc() {
+    let nombre = document.getElementById("nombre").value;
+    let name = nombre.substring(0, 2).toUpperCase();
+    let ap = document.getElementById("ap").value;
+    let fhn = ap.substring(0, 1).toUpperCase();
+    let am = document.getElementById("am").value;
+    let mhn = am.substring(0, 1).toUpperCase();
+    let anio = document.getElementById("anio").value;
+    let year = anio.substring(2, 4);
+    let day = document.getElementById("dia").value;
+    let mont = document.getElementById("mes").value;
+    let mes = "";
+    switch (mont) {
+      case "1":
+        mes = "01";
+        break;
+      case "2":
+        mes = "02";
+        break;
+      case "3":
+        mes = "03";
+        break;
+      case "4":
+        mes = "04";
+        break;
+      case "5":
+        mes = "05";
+        break;
+      case "6":
+        mes = "06";
+        break;
+      case "7":
+        mes = "07";
+        break;
+      case "8":
+        mes = "08";
+        break;
+      case "9":
+        mes = "09";
+        break;
+      default:
+        mes = mont;
+    }
+    let rfc = `${name}${fhn}${mhn}${year}${mes}${day}`;
+    document.getElementById("resultado").value = rfc;
+  }
+</script>
 </body>
 </html>
